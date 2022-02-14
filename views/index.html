@@ -1,5 +1,36 @@
-<h2>Olá mundo</h2>
+<!DOCTYPE html>
+    <html>
+        <head>
+            <meta charset="UTF-8"/>
+            <title>Document</title>
+            <!-- <script src = "../routes/index.js"></script> -->
 
-<form method="post">
-    <input type="text" name="login" />
-</form>
+        </head>
+
+        <body>
+            <div id = "result">
+                <h2>Olá mundo</h2>
+
+                <form method="post">
+                    <input type="text" name="login" />
+                </form>
+            </div>
+            <script>
+
+                let Key_press;
+                    
+                document.querySelector('body').addEventListener("keydown", (event) =>{
+                
+                    Key_press = event.key;
+                
+                    console.log(`A tecla digitada foi ${Key_press}`);
+                })
+
+            </script>
+
+            <!-- <script src = "./A.js">
+                A();
+            </script> -->
+
+        </body>
+    </html>
